@@ -1,0 +1,77 @@
+$tan: #e6d6ba;
+$green: #697668;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    background: $green;
+    color: $tan;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Sports World', sans-serif;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: $tan;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.content {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.button {
+    background: $tan;
+    color: $green;
+    padding: 1rem;
+    cursor: pointer;
+    font-family: 'Sports World';
+    margin-top: 1rem;
+    text-align: center;
+    display: block;
+}
+
+ul {
+    padding: 0;
+    display: flex;
+    gap: 0.5rem;
+    margin: 2rem 0;
+
+    list-style: none;
+
+    li {
+       background: darken($green, 10%);
+       font-weight: bold;
+       padding: 4rem 1rem;
+       text-align: center;
+       flex: 1;
+       border-radius: 0.5rem;
+       position: relative;
+
+       &:before {
+        content: "✓";
+            position: absolute;
+            top: -1rem;
+            margin: 0 auto;
+            background: darken($green, 10%);
+            left: 0;
+            right: 0;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            padding: 1rem;
+    
+       }
+
+    }
+}
