@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -13,6 +12,16 @@ h1, h2, h3, h4, h5 {
   text-transform: uppercase;
 }
 
+footer,
+header {
+  background: #515b50;
+}
+
+footer h1,
+header h1 {
+  margin-top: 0;
+}
+
 a {
   text-decoration: none;
   color: #e6d6ba;
@@ -25,7 +34,16 @@ h1 {
 .content {
   max-width: 40rem;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 2rem 1rem;
+}
+
+.content--spacing {
+  padding: 3rem 1rem;
+}
+
+.siema img {
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 .button {
@@ -36,6 +54,7 @@ h1 {
   font-family: 'Sports World';
   margin-top: 1rem;
   text-align: center;
+  border-radius: 0.5rem;
   display: block;
 }
 
@@ -58,7 +77,7 @@ ul li {
 }
 
 ul li:before {
-  content: "✓";
+  content: url("../img/icon/baseball-solid.svg");
   position: absolute;
   top: -1rem;
   margin: 0 auto;
